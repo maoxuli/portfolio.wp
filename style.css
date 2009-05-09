@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, "URW Bookman L", serif;
+    font-size: 11pt;
+    text-align: center;
+}
+.clear {
+    clear:both;
+}
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* HEADER */
+#header {
+    position: relative;
+    margin-top:40px;
+    height:70px;
+    border-bottom: 1px solid #000;
+}
+#header img.logo {
+    position:absolute;
+    bottom: 5px;
+    border:none;
+}
+#header div.title {
+    position: absolute;
+    bottom: 5px;
+    left:90px;
+}
+#header img.logo2 {
+    position: absolute;
+    bottom:2px;
+    right:0;
+    border:none;
+}
+#header h1{
+    margin:0;
+    font-size:18pt;
+}
+#header h2 {
+    margin:0;
+    margin-top:5px;
+    font-size:10pt;
+    font-weight:normal;
+    color:#999;
+    text-transform:uppercase;
+}
+#header a {
+    color:#289BC2;
+    text-decoration: none;
+}
+
+/* FOOTER */
+#footer {
+    margin-bottom:40px;
+    padding-top:5px;
+    border-top:1px solid #000;
+}
+#footer p {
+    float: left;
+    margin-top:8px;
+    font-size: 10pt;
+    color: #bdbdbd; 
+}
+#footer #counter {
+    float: left;
+    margin:8px 0 0 15px;
+    width:70px;
+}
+#footer img {
+    float:right;
+    border:none;
+}
+#footer a {
+    color:#289BC2;
+    text-decoration: none;
+}
+#footer a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+#main {
+    padding:20px 0 40px 0;
+}
+#main p, #main ul {
+    line-height: 150%;
+}
+#main a img {
+    border:none;
+}
+#main img.alignright {
+    float:right;
+    margin:0 0 20px 40px;
+}
+#grid .section {
+    position:relative;
+    height:80px;
+    margin-top:0px;
+}
+#grid div.odd {
+    float:left; 
+    width:370px;
+}
+
+#grid div.even {
+    float:right;
+    width:390px;
+}
+#grid .section .logo {
+    position: absolute;
+    bottom: 0;
+    width:80px;
+    text-align: center;
+}
+#grid .section .title {
+    position: absolute;
+    bottom: 0;
+    left:100px;
+}
+#grid .section .title h2 {
+    margin-bottom:5px;
+    font-size: 13pt;
+}
+#grid .section .title p {
+    margin:0;
+    padding:0;
+    font-size: 10pt;
+    font-style: italic;
+}
+.post .post-title {
+    font-size: 12pt;
+}
+.post .post-meta {
+    margin-top:-5px;
+    padding-top:0;
+    font-size:10pt;
+    font-style:italic;
+    color:#666;
+}
+.post .aligncenter {
+    text-align: center;
+}
+.post .post-content h2 {
+    font-size: 12pt;
+}
+.post .post-content p {
+    text-align:justify;
+}
+
+/* Navigation in single */
+.navi {
+    position: relative;
+    font-size: 10pt;
+}
+.navi span {
+    position: absolute;
+    right:0;
+}
+.navi a {
+    color:#11c;
+    text-decoration: none;
+}
+.navi a:hover {
+    color:#36c;
+    text-decoration: underline;
+}
+
+/* COMMMENT */
+#comments .comments-title {
+    position: relative;
+    border-bottom: 1px solid #B4B4B4;
+    font-size: 12pt;
+}
+#comments .comments-title span {
+    position: absolute;
+    right:5px;
+    top:3px;
+    font-size: 10pt;
+    font-weight: normal;
+}
+#comments .comments-title span a {
+    color:#11c;
+    text-decoration: none;
+}
+#comments .comments-title span a:hover {
+    color:#36c;
+    text-decoration: underline;
+}
+#comments .navigation {
+    margin:10px 0 10px 0;
+    font-size: 10pt;
+}
+#comments .navigation .nav-previous {
+    float:left;
+}
+#comments .navigation .nav-next {
+    float:right;
+}
+.commentlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.commentlist li.comment {
+    border-bottom: 1px dashed #B4B4B4;
+    line-height: 24px;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 50px;
+    position: relative;
+}
+.commentlist .children {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.commentlist .children li {
+    border:none;
+    border-left:1px dashed #B4B4B4;
+    margin: 0;
+    padding: 0 0 0 50px;
+    position: relative;
+}
+.commentlist .avatar {
+    position: absolute;
+    left:-1px;
+    top:0;
+}
+.comment-author cite {
+    color: #000;
+    font-style: normal;
+    font-weight: bold;
+}
+.comment-author .says {
+    font-style: italic;
+}
+.comment-meta {
+    font-size: 9pt;
+}
+.comment-meta a:link,
+.comment-meta a:visited {
+    color: #888;
+    text-decoration: none;
+}
+.comment-meta a:active,
+.comment-meta a:hover {
+    color: #ff4b33;
+}
+.comment-body p{
+    margin:0;
+    padding:0;
+}
+.reply {
+    margin:0;
+    padding:0;
+    padding-bottom: 20px;
+    font-size:9pt;
+    font-weight: normal;
+}
+.reply a,
+a.comment-edit-link {
+    color: #888;
+}
+.reply a:hover,
+a.comment-edit-link:hover {
+    color: #ff4b33;
+}
+
+.nopassword,
+.nocomments {
+    display: none;
+}
+#comments .pingback {
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+}
+.commentlist li.comment+li.pingback {
+    margin-top: -6px;
+}
+#comments .pingback p {
+    color: #888;
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+}
+#comments .pingback .url {
+    font-size: 13px;
+    font-style: italic;
+}
+
+#respond #reply-title {
+    font-size:11pt;
+}
+#respond #cancel-comment-reply-link {
+    margin-top:3px;
+    margin-left:15px;
+    font-size: 10pt;;
+    font-weight: normal;
+}
+#respond #commentform .comment-notes {
+    display:none;
+}
+#respond #commentform .required {
+    color: #ff4b33;
+    font-weight: bold;
+}
+#respond #commentform label {
+    color: #888;
+    font-size: 10pt;
+    vertical-align: top;
+}
+#respond #commentform textarea {
+    margin-left: 5px;
+    width:600px;
+    max-width: 730px;
+    border:1px solid #B4B4B4;
+}
+#respond #commentform .form-allowed-tags {
+    display:none;
+}
+#respond #commentform .form-submit input {
+    margin-left:58px;
+}
+#respond #commentform p.comment-form-author,
+#respond #commentform p.comment-form-email,
+#respond #commentform p.comment-form-url {
+    position:relative;
+}
+#respond #commentform p.comment-form-author input,
+#respond #commentform p.comment-form-email input,
+#respond #commentform p.comment-form-url input {
+    position: absolute;
+    left:60px;
+    border:1px solid #B4B4B4;
+    width:200px;
+    height:18px;
+}
